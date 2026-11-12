@@ -1,0 +1,48 @@
+[versions]
+agp = "8.7.3"
+kotlin = "2.0.21"
+ksp = "2.0.21-1.0.27"
+composeBom = "2024.12.01"
+activity = "1.9.3"
+lifecycle = "2.8.7"
+room = "2.6.1"
+glance = "1.1.1"
+work = "2.10.0"
+datastore = "1.1.1"
+core = "1.15.0"
+serialization = "1.7.3"
+navigation = "2.8.5"
+sherpa = "v1.13.8"
+lottie = "6.6.2"
+biometric = "1.1.0"
+fragment = "1.8.5"
+
+[libraries]
+compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeBom" }
+compose-ui = { module = "androidx.compose.ui:ui" }
+compose-ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
+compose-material3 = { module = "androidx.compose.material3:material3" }
+compose-icons = { module = "androidx.compose.material:material-icons-extended" }
+activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity" }
+lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycle" }
+lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation" }
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+glance-appwidget = { module = "androidx.glance:glance-appwidget", version.ref = "glance" }
+work-runtime = { module = "androidx.work:work-runtime-ktx", version.ref = "work" }
+datastore = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
+core-ktx = { module = "androidx.core:core-ktx", version.ref = "core" }
+lottie = { module = "com.airbnb.android:lottie-compose", version.ref = "lottie" }
+biometric = { module = "androidx.biometric:biometric", version.ref = "biometric" }
+fragment = { module = "androidx.fragment:fragment-ktx", version.ref = "fragment" }
+sherpa-onnx = { module = "com.github.k2-fsa.sherpa-onnx:sherpa-onnx", version.ref = "sherpa" }
+serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
